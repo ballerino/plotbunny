@@ -1,0 +1,135 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Contact page for the Maryland Plot Bunny website. Do you have any questions for us? Fill out our contact form!">
+		<meta name="keywords" content="maryland writing website, contact, contact form, maryland writing events, creative writing, writing community." />
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Megan Tran" />
+		<meta name="copyright" content="Megan Tran">
+		
+		<title> Maryland Plot Bunnies - Contact </title>
+		<link rel="stylesheet" type="text/css" href="css/finalstyle.css">
+	</head>
+	<body>	
+		<script>
+		function checkForm() {
+			if( document.contactform.name.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.contactform.name.focus() ;
+            return false;
+         }
+         
+         if( document.contactform.mail.value == "" )
+         {
+            alert( "Please provide your Email address!" );
+            document.contactform.mail.focus() ;
+            return false;
+         }
+		 
+		 if( document.contactform.topic.value == "" )
+         {
+            alert( "Please provide a Topic!" );
+            document.contactform.topic.focus() ;
+            return false;
+         }
+		 
+		 if( document.contactform.comment.value == "" )
+         {
+            alert( "Write your comment!" );
+            document.contactform.comment.focus() ;
+            return false;
+         }
+		 return( true );
+		}
+		</script>
+		<div id="wrap">
+		<h1><img src="images/header.jpg" alt="header image" style="width:auto; height:auto;"></h1>
+		<nav>
+			<ul>
+			<li><a href="index.html" title="Home">Home</a></li>
+			<li><a href="faq.html" title="FAQ">FAQ</a></li>
+			<li><a href="prompts.html" title="Prompts">Prompts</a></li>
+			<li><a href="links.html" title="Helpful Links">Helpful Links</a></li>
+			<li><a href="events.html" title="Writing Events">Writing Events</a></li>
+			<li><a href="contact.html" title="Writing Events">Contact</a></li>
+			</ul>
+		</nav>
+		
+		<div id="sidebar">
+		<h4> Search our site! </h4>
+		<script>
+		(function() {
+		var cx = '003928375708619866348:tqzefrhp6xo';
+		var gcse = document.createElement('script');
+		gcse.type = 'text/javascript';
+		gcse.async = true;
+		gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(gcse, s);
+		})();
+		</script>
+		<div class="gcse-search"></div>
+		<div id=signup>
+		Do you want updates on new material on the website? Do you want to join our writing community? <a href="signup.html">Sign up to become a member today!</a>
+		</div>
+		<h4> Visit us on Social Media! </h4>
+		<a href="https://facebook.com"><img src="images/fb.png" alt="facebook" style="width:128px; height:128px;"></a>
+		<a href="https://twitter.com">
+		<img src="images/twitter.png" alt="twitter" style="width:128px; height:128px;"></a>
+		<a href="https://www.pinterest.com/">
+		<img src="images/pinterest.png" alt="pinterest" style="width:128px; height:128px;">
+		</a>
+		</div>
+		
+		<div id="main">
+		<h2> Have A Question?</h2>
+		<div class=box>
+		Do you have any questions or comments for us? We really love hearing from you guys! Fill out the form below. You can write your message in the <b>comments</b> section, and we will get back to you as soon as we can! All fields are required!
+		</div>
+		<form name="contactform" action="MAILTO:megan.t.a.g@gmail.com" onsubmit="return checkForm()" method="post" enctype="text/plain">
+		<fieldset>
+		
+		<legend>*Name: </legend><input type="text" name="name" tabindex="1" />
+		</fieldset>
+		<fieldset><legend>*E-mail: </legend><input type="text" name="mail" tabindex="2"></fieldset>
+		<fieldset><legend>*Topic: </legend>
+			<select name="Topic" tabindex="3">
+			<option selected>Recommedations
+			<option>Requests
+			<option>Site Problems
+			<option>Membership
+			<option>Other
+			</SELECT></fieldset>
+		<fieldset>
+		<legend>*Comments:</legend><textarea name="comment" tabindex="4"></textarea></fieldset>
+		<fieldset><input type="submit" value="Submit" tabindex="5"></fieldset>
+		</form>
+		</div>
+		
+		
+	  
+		<br>
+		
+		<footer>
+		<hr>
+        <div>
+              <p>© Copyright Megan Tran. See our <a href="privacy-policy.html">Privacy Policy</a><br>
+			  CMST 386 Principles of Webdesign and Technology <br>
+			<a href="mailto:megan.t.a.g@gmail.com">megan.t.a.g@gmail.com</a> <br> <br>
+			<a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fnova.umuc.edu%2F~ct386b10%2Fmarylandplotbunny%2Fcontact.html"><img src="http://nova.umuc.edu/~ct386b10/html5logo.gif" alt="validator"></a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+			<img style="border:0;width:88px;height:31px"
+			src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+			alt="Valid CSS!" />
+			</a>
+			</p>
+    
+        </div> 
+		</footer>
+		</div>
+	 </body>
+	  
+</html>
